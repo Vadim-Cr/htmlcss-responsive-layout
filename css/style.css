@@ -1,34 +1,48 @@
 *{
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
+border: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
+/* ! ********************GENERAL************************ */
+button{
+    background-color: white;
+    color: #9792E4;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 1.45rem;
+    font-weight: bold;
+}
+
+.background-container{
+background-color: white;
+}
+
+/* ! *************************************************** */
 
 /* * HEADER */
 .container{
-    display: flex;
-    justify-content: space-between;
-    width: 65%;
-    margin: auto;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+width: 65%;
+margin: auto;
+align-items: center;
 }
 header{
     padding: 1.25rem;
 }
 
 /* * MAIN */
-.background-container{
-    background-color: white;
-    
-}
+
+/* todo **************** INTRODUCTION ********************* */
 .container-I{
-    width: 65%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
-    justify-content: center;
+width: 65%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+padding: 2rem;
+justify-content: center;
 }
 
 #big-sub-container-i{
@@ -40,28 +54,114 @@ max-width: calc(100%*(2/3));
 background-color:  #B5DDFF;
 max-width: calc((100%/3) - 4rem);
 }
-    /* todo INTRODUCTION */
+/* todo **************** FINE INTRODUCTION ******************* */
+
+/* todo **************** PLANNING ********************* */
+
+.container-p{
+width: 60%;
+margin: auto;
+display: flex;
+gap: 2rem;
+justify-content: center;
+padding: 1.25rem;
+}
+/* todo **************** FINE PLANNING ********************* */
+
+/* todo **************** TESTIMONIALS ********************* */
+#sub-container-t{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-info-t{
+    background-color: #9792E4;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* todo **************** FINE TESTIMONIALS ********************* */
+/* todo **************** BENEFITS ********************* */
+
+.container-b{
+    width: 60%;
+    margin: 0 auto;
+}
+#flex-b{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sub-container-b{
+    background-color: white;
+    text-align: left;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 30%;
+    margin-bottom: 2rem;
+}
+
+/* todo **************** FINE BENEFITS ********************* */
+
+/* todo **************** ABOUT US ********************* */
+
+#container-a{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub-container-a-left{
+max-width: 60%;
+}
+
+#sub-container-a-right{
+max-width: 30%;
+}
 
 
+/* todo **************** FINE ABOUT US ********************* */
 
+/* todo **************** CALL TO ACTION ********************* */
+
+.container-cta{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center  ;
+}
+
+/* todo **************** FINE CALL TO ACTION ******************* */
+
+
+/* * Footer */
+#container-footer{
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
 /* ! DEBUG */
-
+/* ? ******************************************************************************************************************************** */
 header{
-    height: 8rem;
-    background-color: #0084FD;
+height: 8rem;
+background-color: #0084FD;
 }
 
 #logo{
-    height: 6rem;
-    min-width: 25%;
-    background-color: chocolate;
+height: 6rem;
+min-width: 25%;
+background-color: chocolate;
 }
 
 nav{
-    height: 6rem;
-    min-width: 25%;
-    background-color: chocolate;
+height: 6rem;
+min-width: 25%;
+background-color: chocolate;
 }
+
+/* ? ******************************************************************************************************************************** */
 
 main{
 background-color: #9792E4;
@@ -69,24 +169,41 @@ min-height: 15rem;
 }
 
 .container-I{
-    width: 65%;
-    min-height: 10rem;
-    background-color: beige;
+width: 65%;
+min-height: 10rem;
+background-color: beige;
 }
 
 #big-sub-container-i{
-    min-height: 10rem;    
-    }
+min-height: 10rem;    
+min-width: 15rem;
+}
     
 .small-sub-container-i{
-    min-height: 10rem;    
+min-height: 10rem;    
+min-width: 10rem;
+}
+
+#container-left-p{
+background-color: burlywood;
+height: 200px;
+width: 200px;
+}
+
+#container-right-p{
+background-color: burlywood;
+height: 200px;
+width: 200px;
+}
+
+.container-info-t{
+    height: 200px;
 
 }
 
-
-
+/* ? ******************************************************************************************************************************** */
 
 footer{
-    background-color: #333333;
-    height: 12rem;
+background-color: #333333;
+height: 12rem;
 }
