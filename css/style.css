@@ -1,0 +1,92 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* * HEADER */
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+    align-items: center;
+}
+header{
+    padding: 1.25rem;
+}
+
+/* * MAIN */
+.background-container{
+    background-color: white;
+    
+}
+.container-I{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#big-sub-container-i{
+background-color:  #B5DDFF;
+max-width: calc(100%*(2/3));
+}
+
+.small-sub-container-i{
+background-color:  #B5DDFF;
+max-width: calc((100%/3) - 4rem);
+}
+    /* todo INTRODUCTION */
+
+
+
+/* ! DEBUG */
+
+header{
+    height: 8rem;
+    background-color: #0084FD;
+}
+
+#logo{
+    height: 6rem;
+    min-width: 25%;
+    background-color: chocolate;
+}
+
+nav{
+    height: 6rem;
+    min-width: 25%;
+    background-color: chocolate;
+}
+
+main{
+background-color: #9792E4;
+min-height: 15rem;    
+}
+
+.container-I{
+    width: 65%;
+    min-height: 10rem;
+    background-color: beige;
+}
+
+#big-sub-container-i{
+    min-height: 10rem;    
+    }
+    
+.small-sub-container-i{
+    min-height: 10rem;    
+
+}
+
+
+
+
+footer{
+    background-color: #333333;
+    height: 12rem;
+}
