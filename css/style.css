@@ -39,6 +39,7 @@ header{
     height: 6rem;
     width: 100%;
     background-color: #0084FD;
+    z-index: 2;
 }
 
 .container{
@@ -483,7 +484,7 @@ padding: 1.25rem;
     padding: 0.5rem 2.5rem ;
 }
 /* ? -------------------------------------------------------- */
-/* ?                    Tablet and Mobile                     */
+/* ?                           Tablet                         */
 /* ? -------------------------------------------------------- */
 
 @media screen and (max-width: 1500px) {
@@ -506,6 +507,9 @@ padding: 1.25rem;
         min-width: 45%;
     }
 }
+/* ? -------------------------------------------------------- */
+/* ?                           Mobile                         */
+/* ? -------------------------------------------------------- */
 
 @media screen and (max-width: 500px) {
     .sub-container-b{
@@ -513,6 +517,7 @@ padding: 1.25rem;
         margin: 1rem auto 1rem;
     }
 }
+/* ? -------------------------------------------------------- */
 
 /* todo **************** FINE BENEFITS ********************* */
 
@@ -523,16 +528,97 @@ padding: 1.25rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 5rem;
 }
 
 #sub-container-a-left{
-max-width: 60%;
+    max-width: 60%;
+}
+
+#sub-container-a-left h2{
+    color: #9792E4;
+    font-size: 3rem;
+}
+
+#sub-container-a-left p{
+    color: #707070;
+    font-size: 1.25rem;
+    line-height: 2.15rem;
 }
 
 #sub-container-a-right{
-max-width: 30%;
+    max-width: 25%;
+    position: relative;
+    z-index: 1;
+}
+#quote{
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    font-size: 3rem;
+    color: #9792E4;
 }
 
+#sub-container-a-right img{
+object-fit: contain;
+max-width: 80%;
+border-radius: 50%;
+margin-top: 3rem;
+}
+
+#sub-container-a-right h3{
+color: #9792E4;
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+
+/* ? -------------------------------------------------------- */
+/* ?                         Tablet                           */
+/* ? -------------------------------------------------------- */
+
+@media screen and (max-width: 1500px) {
+    #quote{
+  
+        top: 3rem;
+        right: 2rem;
+    }
+
+    #container-a{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #quote{
+        font-size: 2rem;
+        top: 3rem;
+        right: 0.5rem;
+    }
+
+    #container-a{
+       max-width: 90%;
+       padding: 1rem;
+    }
+}
+
+/* ? -------------------------------------------------------- */
+/* ?                         Mobile                           */
+/* ? -------------------------------------------------------- */
+
+@media screen and (max-width: 500px) {
+    #container-a{
+       max-width: 95%;
+       display: block;
+    }
+    #sub-container-a-right, #sub-container-a-left{
+        min-width: 90%;
+    }
+    #quote{
+        font-size: 4rem;
+        right: 4rem;
+    }
+}
 
 /* todo **************** FINE ABOUT US ********************* */
 
