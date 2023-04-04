@@ -123,6 +123,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 3rem;
+    border-radius: 2rem;
 }
 
 .sub-bsc-i{
@@ -162,6 +163,7 @@ nav{
     max-width: 30%;
     text-align: center;
     padding: 1.5rem;
+    border-radius: 2rem;
 }
 .testo-blu i{
     font-size: 6rem;
@@ -170,14 +172,44 @@ nav{
     /* FINISCE il PICCOLO sub-contenitore di INTRODUCTION */
 
 /* ? -------------------------------------------------------- */
-/* ?                    Tablet and Mobile                     */
+/* ?                         Tablet                           */
 /* ? -------------------------------------------------------- */
 @media screen and (max-width: 1000px){
-    .container-i{
+    .container-I{
         width: 95%;
-
     }
-    
+    #big-sub-container-i{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub-bsc-i{
+        max-width: 95%;
+        margin-top: 2rem;
+    }
+}
+
+/* ? -------------------------------------------------------- */
+/* ?                           Mobile                         */
+/* ? -------------------------------------------------------- */
+@media screen and (max-width: 600px){
+  .container-I{
+    display: block;
+  }  
+  #big-sub-container-i{
+   max-width: 95%;
+   margin-bottom: 1.5rem;
+   padding: 1rem;
+  }
+
+  .sub-bsc-i{
+    margin-bottom: 2rem;
+
+}
+  .small-sub-container-i{
+    max-width: 95%;
+    margin-bottom: 1.5rem;
+
+  }
 }
 
 
