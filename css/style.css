@@ -222,13 +222,118 @@ nav{
 /* todo **************** PLANNING ********************* */
 
 .container-p{
-width: 60%;
+width: 50%;
 margin: auto;
 display: flex;
 gap: 2rem;
-justify-content: center;
+justify-content: end;
 padding: 1.25rem;
 }
+#container-left-p{
+    max-width: 75%;
+    padding: 6rem;
+    }
+
+#container-left-p h3{
+    margin-top: 10rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+#container-left-p p{
+    color: white;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-top: 5rem;
+}
+
+#container-right-p{
+    background-color: white;
+    border-radius: 2rem;
+    max-width: 40%;
+    text-align: center;
+    margin-top: 20rem;
+    padding: 3rem;
+}
+
+#container-right-p h4{
+    font-size: 2rem;
+}
+
+#container-right-p p{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.purple{
+    background-color: #9792E4;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 2rem 2.5rem;
+}
+
+
+
+
+#container-right-p img{
+    max-height: 50%;
+}
+
+.img-p{
+    object-fit: contain;
+    max-width: 100%;
+}
+
+/* ? -------------------------------------------------------- */
+/* ?                    Tablet and Mobile                     */
+/* ? -------------------------------------------------------- */
+@media screen and (max-width: 1700px) {
+    .container-p{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .container-p{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .container-p{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container-p{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .container-p{
+        display: block;
+    }
+    #container-left-p{
+        min-width: 100%;
+        padding: 1rem;
+    }
+    #container-right-p{
+        min-width: 100%;
+        margin-top: 3rem;
+    }
+
+}
+
+/* ? -------------------------------------------------------- */
+/* ?                         Mobile                           */
+/* ? -------------------------------------------------------- */
+
+
+
 /* todo **************** FINE PLANNING ********************* */
 
 /* todo **************** TESTIMONIALS ********************* */
@@ -329,7 +434,7 @@ min-height: 10rem;
 min-width: 10rem;
 } */
 
-#container-left-p{
+/* #container-left-p{
 background-color: burlywood;
 height: 200px;
 width: 200px;
@@ -339,7 +444,7 @@ width: 200px;
 background-color: burlywood;
 height: 200px;
 width: 200px;
-}
+} */
 
 .container-info-t{
     height: 200px;
