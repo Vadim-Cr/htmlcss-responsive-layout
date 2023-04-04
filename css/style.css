@@ -338,16 +338,91 @@ padding: 1.25rem;
 
 /* todo **************** TESTIMONIALS ********************* */
 #sub-container-t{
-    width: 65%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 0 auto 2rem;
     text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+#sub-container-t h2{
+    color: #9792E4;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#p-sct{
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 .container-info-t{
     background-color: #9792E4;
-    border-radius: 1rem;
+    border-radius: 5rem;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+.container-info-t p{
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+
+.name{
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+}
+.container-info-t img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+
+
+/* ? -------------------------------------------------------- */
+/* ?                    Tablet and Mobile                     */
+/* ? -------------------------------------------------------- */
+
+@media screen and (max-width: 1500px) {
+    #sub-container-t{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #sub-container-t{
+        width: 95%;
+    }
+    .container-info-t p{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .container-info-t{
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-info-t{
+        display: block;
+        padding: 3rem;
+    }
+    .container-info-t div{
+    text-align: center;
+    }
+    .container-info-t p{
+        text-align: center;
+    }
+
 }
 
 /* todo **************** FINE TESTIMONIALS ********************* */
@@ -357,6 +432,8 @@ padding: 1.25rem;
     width: 60%;
     margin: 0 auto;
 }
+
+
 #flex-b{
     display: flex;
     flex-wrap: wrap;
@@ -446,10 +523,10 @@ height: 200px;
 width: 200px;
 } */
 
-.container-info-t{
+/* .container-info-t{
     height: 200px;
 
-}
+} */
 
 /* ? ******************************************************************************************************************************** */
 
