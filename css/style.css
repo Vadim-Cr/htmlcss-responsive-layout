@@ -169,6 +169,21 @@ nav{
 
     /* FINISCE il PICCOLO sub-contenitore di INTRODUCTION */
 
+/* ? -------------------------------------------------------- */
+/* ?                    Tablet and Mobile                     */
+/* ? -------------------------------------------------------- */
+@media screen and (max-width: 1000px){
+    .container-i{
+        width: 95%;
+
+    }
+    
+}
+
+
+
+/* ? -------------------------------------------------------- */
+
 
 /* todo **************** FINE INTRODUCTION ******************* */
 
@@ -266,21 +281,21 @@ background-color: #9792E4;
 min-height: 15rem;    
 }
 
-.container-I{
+/* .container-I{
 width: 65%;
 min-height: 10rem;
 background-color: beige;
-}
+} */
 
-#big-sub-container-i{
+/* #big-sub-container-i{
 min-height: 10rem;    
 min-width: 15rem;
-}
+} */
     
-.small-sub-container-i{
+/* .small-sub-container-i{
 min-height: 10rem;    
 min-width: 10rem;
-}
+} */
 
 #container-left-p{
 background-color: burlywood;
