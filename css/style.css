@@ -388,7 +388,7 @@ padding: 1.25rem;
 
 
 /* ? -------------------------------------------------------- */
-/* ?                    Tablet and Mobile                     */
+/* ?                          Tablet                          */
 /* ? -------------------------------------------------------- */
 
 @media screen and (max-width: 1500px) {
@@ -410,6 +410,9 @@ padding: 1.25rem;
         padding: 2rem;
     }
 }
+/* ? -------------------------------------------------------- */
+/* ?                          Mobile                          */
+/* ? -------------------------------------------------------- */
 
 @media screen and (max-width: 500px) {
     .container-info-t{
@@ -422,8 +425,10 @@ padding: 1.25rem;
     .container-info-t p{
         text-align: center;
     }
-
 }
+
+/* ? -------------------------------------------------------- */
+
 
 /* todo **************** FINE TESTIMONIALS ********************* */
 /* todo **************** BENEFITS ********************* */
@@ -433,6 +438,12 @@ padding: 1.25rem;
     margin: 0 auto;
 }
 
+.container-b h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin: 3rem 0 3rem;
+}
 
 #flex-b{
     display: flex;
@@ -446,6 +457,61 @@ padding: 1.25rem;
     border-radius: 1rem;
     max-width: 30%;
     margin-bottom: 2rem;
+}
+
+.numbers{
+    color: #9792E4;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.type{
+    color: #9792E4;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.sub-container-b p{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #707070;
+}
+
+.purple2{
+    background-color: #9792E4;
+    color: white;
+    padding: 0.5rem 2.5rem ;
+}
+/* ? -------------------------------------------------------- */
+/* ?                    Tablet and Mobile                     */
+/* ? -------------------------------------------------------- */
+
+@media screen and (max-width: 1500px) {
+    .container-b{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container-b{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .container-b{
+        width: 95%;
+    }
+    .sub-container-b{
+        min-width: 45%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sub-container-b{
+        min-width: 90%;
+        margin: 1rem auto 1rem;
+    }
 }
 
 /* todo **************** FINE BENEFITS ********************* */
