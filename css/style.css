@@ -1,10 +1,14 @@
 *{
-border: 0;
-padding: 0;
-box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ! ********************GENERAL************************ */
+body{
+    margin: 0;
+    font-family: PT Sans;
+}
 button{
     background-color: white;
     color: #9792E4;
@@ -13,47 +17,159 @@ button{
     border-radius: 1.45rem;
     font-weight: bold;
 }
+button:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
 
 .background-container{
-background-color: white;
+    background-color: white;
 }
 
 /* ! *************************************************** */
 
 /* * HEADER */
-.container{
-display: flex;
-justify-content: space-between;
-width: 65%;
-margin: auto;
-align-items: center;
-}
 header{
-    padding: 1.25rem;
+    height: 6rem;
 }
+
+#mega-container{
+    padding: 1.25rem;
+    position: fixed;
+    height: 6rem;
+    width: 100%;
+    background-color: #0084FD;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#logo{
+    height: 3rem;
+}
+
+.logo img{
+    min-width: 100%;
+}
+
+#dimension-tablet{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+
+nav{
+    height: 4rem;
+    min-width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navigator{
+    color: white;
+}
+.navigator:hover{
+    text-decoration: #9792E4;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ? -------------------------------------------------------- */
+/* ?                    Tablet and Mobile                     */
+/* ? -------------------------------------------------------- */
+
+@media screen and (max-width: 1000px){
+    .container{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 810px){
+    nav{
+        display: none;
+    }
+    #dimension-tablet{
+    display: block;
+    }    
+}
+
+
+/* ? -------------------------------------------------------- */
+
 
 /* * MAIN */
 
 /* todo **************** INTRODUCTION ********************* */
 .container-I{
-width: 65%;
-margin: auto;
-display: flex;
-flex-wrap: wrap;
-gap: 2rem;
-padding: 2rem;
-justify-content: center;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.75rem;
+    justify-content: center;
 }
-
+    /* INIZIA il grande sub-contenitore di INTRODUCTION */
 #big-sub-container-i{
-background-color:  #B5DDFF;
-max-width: calc(100%*(2/3));
+    background-color:  #B5DDFF;
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
 }
 
-.small-sub-container-i{
-background-color:  #B5DDFF;
-max-width: calc((100%/3) - 4rem);
+.sub-bsc-i{
+    max-width: 45%;
 }
+.testo-blu{
+    color: #0084FD;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.i-p-text{
+    color: #607A8F;
+    font-weight: bold;
+    line-height: 1.75rem;
+}
+
+#blue{
+    background-color: #0084FD;
+    color: white;
+    padding: 0.75rem 2.5rem;
+}
+
+#img-intro{
+    object-fit: fill;
+    max-width: 100%;
+    margin-bottom: -3.5rem;
+}
+
+    /* FINISCE il grande sub-contenitore di INTRODUCTION */
+
+    /* INIZIA il PICCOLO sub-contenitore di INTRODUCTION */
+    
+.small-sub-container-i{
+    background-color:  #B5DDFF;
+    max-width: 30%;
+    text-align: center;
+    padding: 1.5rem;
+}
+.testo-blu i{
+    font-size: 6rem;
+}
+
+    /* FINISCE il PICCOLO sub-contenitore di INTRODUCTION */
+
+
 /* todo **************** FINE INTRODUCTION ******************* */
 
 /* todo **************** PLANNING ********************* */
@@ -143,24 +259,6 @@ max-width: 30%;
     text-align: center;
 }
 /* ! DEBUG */
-/* ? ******************************************************************************************************************************** */
-header{
-height: 8rem;
-background-color: #0084FD;
-}
-
-#logo{
-height: 6rem;
-min-width: 25%;
-background-color: chocolate;
-}
-
-nav{
-height: 6rem;
-min-width: 25%;
-background-color: chocolate;
-}
-
 /* ? ******************************************************************************************************************************** */
 
 main{
